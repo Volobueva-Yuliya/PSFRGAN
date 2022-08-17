@@ -1,4 +1,4 @@
-from dcpsfrgan.utils.base_options import BaseOptions
+from dcpsfrgan.options.base_options import BaseOptions
 
 
 class TestOptions(BaseOptions):
