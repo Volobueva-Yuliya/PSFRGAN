@@ -10,9 +10,9 @@ from skimage import transform as trans
 from skimage import io
 
 import torch
-from utils import utils
-from options.test_options import TestOptions
-from models import create_model
+from dcpsfrgan.utils import utils
+from dcpsfrgan.options.test_options import TestOptions
+from dcpsfrgan.models import create_model
 
 
 def detect_and_align_faces(img, face_detector, lmk_predictor, template_path, template_scale=2, size_threshold=999):
