@@ -2,11 +2,10 @@ import argparse
 import os
 import numpy as np
 import random
-from utils import utils
+from dcpsfrgan.utils import utils
 import torch
 import models
 import data
-from utils import utils
 
 
 class BaseOptions():
