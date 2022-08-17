@@ -10,11 +10,11 @@ from skimage import transform as trans
 from skimage import io
 
 import torch
-from dcpsfrgan.utils import utils
-from dcpsfrgan.options.test_options import TestOptions
-from dcpsfrgan.models import create_model
+from utils import utils
+from options.test_options import TestOptions
+from models import create_model
 
-from dcpsfrgan.test_enhance_single_unalign import * 
+from test_enhance_single_unalign import * 
 
 
 if __name__ == '__main__':
