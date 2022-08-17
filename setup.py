@@ -10,7 +10,7 @@ setup(
     install_requires=[
 	torch,
 	torchvision,
-	tensorflow>=1.15.4,
+	tensorflow,
 	tensorboard,
 	tensorboardX,
 	opencv-python,
