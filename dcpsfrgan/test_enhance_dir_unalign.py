@@ -14,7 +14,7 @@ from dcpsfrgan.utils import utils
 from dcpsfrgan.options.test_options import TestOptions
 from dcpsfrgan.models import create_model
 
-from dcpsfrgan.test_enhance_single_unalign import detect_and_align_faces, def_models, enhance_faces, past_faces_back
+from dcpsfrgan.test_enhance_single_unalign import detect_and_align_faces, def_models, enhance_faces, past_faces_back, save_imgs
 
 
 if __name__ == '__main__':
