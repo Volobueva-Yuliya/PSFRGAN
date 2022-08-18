@@ -9,7 +9,7 @@ import torch
 import time 
 import numpy as np
 
-if __name__ == '__main__':
+def main():
     opt = TestOptions().parse()  # get test options
     opt.num_threads = 0   # test code only supports num_threads = 1
     opt.batch_size = 4 # test code only supports batch_size = 1
@@ -58,5 +58,6 @@ if __name__ == '__main__':
 
         if i > max_size: break
 
-       
+if __name__ == '__main__':
+    main()       
  

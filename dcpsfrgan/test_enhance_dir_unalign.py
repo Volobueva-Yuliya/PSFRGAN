@@ -17,7 +17,7 @@ from dcpsfrgan.models import create_model
 from dcpsfrgan.test_enhance_single_unalign import detect_and_align_faces, def_models, enhance_faces, past_faces_back, save_imgs
 
 
-if __name__ == '__main__':
+def main():
     opt = TestOptions().parse()
     #  face_detector = dlib.get_frontal_face_detector()
     face_detector = dlib.cnn_face_detection_model_v1('./pretrain_models/mmod_human_face_detector.dat')
@@ -55,3 +55,5 @@ if __name__ == '__main__':
         io.imsave(final_save_path, hq_img)
 
 
+if __name__ == '__main__':
+    main()
