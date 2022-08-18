@@ -1,7 +1,7 @@
 import torch
-from .base_model import BaseModel
-from . import networks
-from utils import utils
+from dcpsfrgan.models.base_model import BaseModel
+from dcpsfrgan.models import networks
+from dcpsfrgan.utils import utils
 
 class ParseModel(BaseModel):
     def modify_commandline_options(parser, is_train):

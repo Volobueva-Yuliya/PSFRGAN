@@ -1,8 +1,8 @@
 import os
-from options.test_options import TestOptions
-from data import create_dataset
-from models import create_model
-from utils import utils
+from dcpsfrgan.options.test_options import TestOptions
+from dcpsfrgan.data import create_dataset
+from dcpsfrgan.models import create_model
+from dcpsfrgan.utils import utils
 from PIL import Image
 from tqdm import tqdm
 import torch

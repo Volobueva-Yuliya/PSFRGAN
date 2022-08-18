@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 from torch.nn import init
 import numpy as np
-from models.blocks import *
+from dcpsfrgan.models.blocks import *
 
 
 class SPADENorm(nn.Module):

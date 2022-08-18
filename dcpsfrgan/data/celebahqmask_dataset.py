@@ -11,10 +11,10 @@ import torch
 from torch.utils.data import Dataset
 from torchvision.transforms import transforms
 
-from data.base_dataset import BaseDataset
-from utils.utils import onehot_parse_map
+from dcpsfrgan.data.base_dataset import BaseDataset
+from dcpsfrgan.utils.utils import onehot_parse_map
 
-from data.ffhq_dataset import complex_imgaug, random_gray
+from dcpsfrgan.data.ffhq_dataset import complex_imgaug, random_gray
 
 class CelebAHQMaskDataset(BaseDataset):
 

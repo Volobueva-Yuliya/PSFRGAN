@@ -1,10 +1,10 @@
-from utils.timer import Timer
-from utils.logger import Logger
-from utils import utils
+from dcpsfrgan.utils.timer import Timer
+from dcpsfrgan.utils.logger import Logger
+from dcpsfrgan.utils import utils
 
-from options.train_options import TrainOptions
-from data import create_dataset
-from models import create_model
+from dcpsfrgan.options.train_options import TrainOptions
+from dcpsfrgan.data import create_dataset
+from dcpsfrgan.models import create_model
 
 import torch 
 import os

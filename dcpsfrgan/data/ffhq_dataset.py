@@ -5,14 +5,14 @@ from PIL import Image
 import imgaug as ia
 import imgaug.augmenters as iaa
 
-from data.image_folder import make_dataset
+from dcpsfrgan.data.image_folder import make_dataset
 
 import torch
 from torch.utils.data import Dataset
 from torchvision.transforms import transforms
 
-from data.base_dataset import BaseDataset
-from utils.utils import onehot_parse_map
+from dcpsfrgan.data.base_dataset import BaseDataset
+from dcpsfrgan.utils.utils import onehot_parse_map
 
 class FFHQDataset(BaseDataset):
 

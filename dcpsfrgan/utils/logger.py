@@ -1,7 +1,7 @@
 import os
 from collections import OrderedDict
 import numpy as np
-from .utils import mkdirs
+from dcpsfrgan.utils.utils import mkdirs
 from tensorboardX import SummaryWriter
 from datetime import datetime
 import socket

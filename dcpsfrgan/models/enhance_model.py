@@ -6,10 +6,10 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 
-from models import loss 
-from models import networks
-from .base_model import BaseModel
-from utils import utils
+from dcpsfrgan.models import loss 
+from dcpsfrgan.models import networks
+from dcpsfrgan.models.base_model import BaseModel
+from dcpsfrgan.utils import utils
 
 class EnhanceModel(BaseModel):
 

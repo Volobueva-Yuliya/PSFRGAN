@@ -1,6 +1,6 @@
 import torch
 from torchvision import models
-from utils import utils
+from dcpsfrgan.utils import utils
 from torch import nn
 
 

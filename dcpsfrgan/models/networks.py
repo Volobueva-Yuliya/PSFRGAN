@@ -1,14 +1,14 @@
-from models.blocks import *
+from dcpsfrgan.models.blocks import *
 import torch
 from torch import nn
 from torch.nn import init
 from torch.optim import lr_scheduler
-from utils import utils
+from dcpsfrgan.utils import utils
 import numpy as np
 
-from models import psfrnet 
+from dcpsfrgan.models import psfrnet 
 import torch.nn.utils as tutils
-from models.loss import PCPFeat
+from dcpsfrgan.models.loss import PCPFeat
 
 
 def apply_norm(net, weight_norm_type):
