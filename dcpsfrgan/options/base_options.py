@@ -4,8 +4,8 @@ import numpy as np
 import random
 from dcpsfrgan.utils import utils
 import torch
-import models
-import data
+from dcpsfrgan import models
+from dcpsfrgan import data
 
 
 class BaseOptions():
