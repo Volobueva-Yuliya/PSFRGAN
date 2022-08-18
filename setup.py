@@ -7,7 +7,6 @@ setup(
         'console_scripts': [
             'test_enhance_dir_align = dcpsfrgan.test_enhance_dir_align:main',
             'test_enhance_dir_unalign = dcpsfrgan.test_enhance_dir_unalign:main',
-            'test_enhance_single_unalign = dcpsfrgan.test_enhance_single_unalign:main',
         ],
     },
     version='0.1dev',
