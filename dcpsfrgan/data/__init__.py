@@ -11,6 +11,7 @@ Now you can use the dataset class by specifying flag '--dataset_mode dummy'.
 See our template dataset class 'template_dataset.py' for more details.
 """
 import importlib
+
 import torch.utils.data
 from dcpsfrgan.data.base_dataset import BaseDataset
 
@@ -33,7 +34,9 @@ def find_dataset_using_name(dataset_name):
             dataset = cls
 
     if dataset is None:
-        raise NotImplementedError("In %s.py, there should be a subclass of BaseDataset with class name that matches %s in lowercase." % (dataset_filename, target_dataset_name))
+        raise NotImplementedError(
+            "In %s.py, there should be a subclass of BaseDataset with class name that matches %s in lowercase." %
+            (dataset_filename, target_dataset_name))
 
     return dataset
 
@@ -71,7 +74,8 @@ class CustomDatasetDataLoader():
         self.opt = opt
         dataset_class = find_dataset_using_name(opt.dataset_name)
         self.dataset = dataset_class(opt)
-        print("dataset [%s] was created" % type(self.dataset).__name__)
+        print("dataset [%s] was created" %
+              type(self.dataset).__name__)
         drop_last = True if opt.isTrain else False
         self.dataloader = torch.utils.data.DataLoader(
             self.dataset,
